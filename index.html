@@ -3,81 +3,372 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Mohammed Sadek - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="darkModeToggle">🌙 Dark Mode</button>
+    <div class="container">
+      <img src="pic.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>Mohammed Ali Sadek</h1>
+      <p>Machine Learning & Data Science Engineer | Signal Processing Enthusiast</p>
+      
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <div class="header-buttons">
+        <button id="darkModeToggle"><i class="fas fa-moon"></i> Dark Mode</button>
+        <a href="Mohammed-Ali-Sadek.pdf" download class="cv-button"><i class="fas fa-download"></i> Download CV</a>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m [Your Name], a [Your Role, e.g. Machine Learning Engineer / Data Scientist]. 
-    I enjoy building intelligent systems and solving real-world problems with code.</p>
-  </section>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate engineer with strong foundations in <b>Machine Learning, Data Analysis, and Signal Processing</b>. 
+        I enjoy solving complex problems using algorithms, coding, and modeling. 
+        My background in <b>communications and AI</b> enables me to design intelligent systems that make data-driven decisions. 
+        I am highly motivated, detail-oriented, and eager to contribute to impactful projects in <b>AI and data science</b>.
+      </p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, MATLAB, JavaScript</li>
-      <li>Machine Learning (scikit-learn, TensorFlow, PyTorch)</li>
-      <li>Data Analysis (Pandas, NumPy, Matplotlib)</li>
-      <li>Web Development (HTML, CSS, Django)</li>
-    </ul>
-  </section>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Communication and Information Engineering</h3>
+            <p class="institution">Zewail City for Science and Technology ®</p>
+            <p class="timeline-date">10/2022 – present</p>
+            <p class="location">October Gardens, Egypt</p>
+            <ul>
+              <li>B.Sc. in Communication and Information Engineering (ABET Accredited University)</li>
+              <li>Relevant Coursework: Software development, Control Systems, Analog Electronics, Advanced Electrical systems and circuits, DSP, Communication Systems, Probability Theory and Stochastic Processes, Electromagnetics, Transmission line, Waveguides, and Antenna Theory, OOP and DSA, Operating systems, low-level programming, and Project Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Title 1</h3>
-      <p>Short description of your project. What tools you used, what problem it solves, and a link if available.</p>
-      <a href="#">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Project Title 2</h3>
-      <p>Another project description here with highlights of your contribution.</p>
-      <a href="#">View on GitHub</a>
-    </div>
-  </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Internship Trainee</h3>
+            <p class="institution">WE (Telecom Egypt Training Sector) - Communication Systems Training</p>
+            <p class="timeline-date">07/2025 – 06/2025</p>
+            <p class="location">Nasr City - Egypt</p>
+            <ul>
+              <li>Gained hands-on experience with optical fiber networks: cable types, splicing, testing, measurement, and deployment tools</li>
+              <li>Practiced FTTx network design from the central office to the endpoint</li>
+              <li>Studied SDH, DWDM, GPON, and alarm codes; explored OLT configuration and power budgeting</li>
+              <li>Satellite communication systems, including VSAT technology</li>
+            </ul>
+          </div>
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="#">github.com/yourusername</a></p>
-  </section>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Internship Trainee</h3>
+            <p class="institution">NTI - Egyptian Talents Academy (ETA) - Huawei HCIA - AI</p>
+            <p class="timeline-date">04/2025 – 06/2025</p>
+            <p class="location">Giza, Egypt</p>
+            <ul>
+              <li>Completed HCIA-AI certification with hands-on implementation of core ML algorithms (Regression, SVM, KNN, CNN) using scikit-learn and PyTorch</li>
+              <li>Built full ML pipelines: data cleaning, preprocessing, feature engineering, and exploratory analysis</li>
+              <li>Developed and evaluated a real-world AI project from data collection to model deployment</li>
+              <li>Gained practical experience in supervised/unsupervised learning, deep learning, and advanced AI topics including Quantum ML, Automation, and Computer Vision</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Student</h3>
+            <p class="institution">ALX Software Engineering</p>
+            <p class="timeline-date">08/2023 – 02/2024</p>
+            <p class="location">Remote</p>
+            <ul>
+              <li>Developed and implemented mini-projects in C and Python during the ALX Software Engineering program, leveraging Git/GitHub for version control and collaboration</li>
+              <li>Improved code efficiency by optimizing algorithms and data structures</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Internet of Things Summer Internship</h3>
+            <p class="institution">NTI (National Telecommunication Institute)</p>
+            <p class="timeline-date">08/2025 – 09/2025</p>
+            <p class="location">Remote</p>
+            <ul>
+              <li>Gained hands-on experience with IoT architectures, networking, and cloud integration (MQTT, Packet Tracer, Smart Devices, Cloud Computing, Big Data, Data security)</li>
+              <li>Programmed and interfaced ESP32 microcontrollers using C, MicroPython, and RTOS, with simulation and debugging via Wokwi & VS Code</li>
+              <li>Designed and implemented an ESP32 Smart LED Control System with MQTT, featuring manual and automatic modes, real-time sensor updates, and two-way communication with clients</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>MATLAB</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-brain"></i> Machine Learning & Data Analysis</h3>
+          <ul>
+            <li>Supervised & Unsupervised Learning</li>
+            <li>Regression (Linear, Logistic, Polynomial)</li>
+            <li>Classification, KNN, SVM, Decision Trees</li>
+            <li>CNN, Data Preprocessing, Feature Engineering</li>
+            <li>EDA, Model Evaluation</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-wave-square"></i> Digital Signal Processing</h3>
+          <ul>
+            <li>Spectral Analysis (Welch)</li>
+            <li>FIR Filter Design</li>
+            <li>Signal Reconstruction</li>
+            <li>PCM Codes</li>
+            <li>Analog/Digital Modulation (AM, FM, PM, QAM)</li>
+            <li>AWGN Channel Modeling</li>
+            <li>ADC/DAC</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Concepts & Techniques</h3>
+          <ul>
+            <li>OOP</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Database Design</li>
+            <li>System Modeling</li>
+            <li>Version Control</li>
+            <li>Agile Collaboration</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+          <ul>
+            <li>Git</li>
+            <li>Linux</li>
+            <li>Jupyter Notebook</li>
+            <li>Google Colab</li>
+            <li>Simulink</li>
+            <li>ModelSim</li>
+            <li>Logisim</li>
+            <li>Proteus</li>
+            <li>Arduino</li>
+            <li>Power BI</li>
+            <li>Excel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-waveform"></i> Digital Signal Processing – Spectral Estimation & Audio Filtering</h3>
+            <p class="project-date">03/2025 – 05/2025</p>
+            <p>Designed a DSP system to suppress 15.2 kHz interference from audio signals using spectral analysis (Welch's method) and FIR filters.</p>
+            <ul>
+              <li>Evaluated the effects of window types, FFT size, and overlap on spectral resolution and leakage</li>
+              <li>Compared filter designs to ensure effective noise removal with minimal distortion</li>
+            </ul>
+            <p class="tech-stack">MATLAB, Filter Design, Signal analysis, Decision matrix</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-lightbulb"></i> ESP32 Smart LED Control System with MQTT</h3>
+            <p class="project-date">08/2025 – 08/2025</p>
+            <p>Implemented using MicroPython, HiveMQ broker, and my local laptop's VS Code, integrating temperature sensing, relay control, and two-way MQTT communication between the ESP32 and my personal device.</p>
+            <p class="tech-stack">MicroPython, MQTT, ESP32, IoT</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-broadcast-tower"></i> Communication Theory Project – Modulation & Demodulation Systems</h3>
+            <p class="project-date">03/2025 – 04/2025</p>
+            <p>Built complete modulation-demodulation chains for AM (DSB-SC/QAM), FM, and PM; modeled noise/distortion impact.</p>
+            <ul>
+              <li>Designed Butterworth LPFs for demodulation</li>
+              <li>Explored bandwidth-efficiency tradeoffs in analog transmission systems</li>
+            </ul>
+            <p class="tech-stack">MATLAB, Signal Processing</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-sliders-h"></i> PID Controller Design for RC Circuit</h3>
+            <p class="project-date">03/2025 – 05/2025</p>
+            <p>Designed and implemented a PID control system for an RC circuit using MATLAB/Simulink, LTSpice, and Arduino.</p>
+            <ul>
+              <li>Modeled the system in state-space and transfer function forms</li>
+              <li>Tuned controller parameters and validated performance through hardware and simulation comparison</li>
+            </ul>
+            <p class="tech-stack">MATLAB, Simulink, Arduino, LTspice</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-microphone"></i> PCM-Based Voice Codec System</h3>
+            <p class="project-date">04/2025 – 05/2025</p>
+            <p>Simulated a full digital voice communication system including sampling, quantization, line coding, AWGN channel modeling, and signal reconstruction.</p>
+            <ul>
+              <li>Evaluated how resolution, sampling rate, and noise levels affect perceived audio quality, SNR, and BER</li>
+            </ul>
+            <p class="tech-stack">MATLAB, Audio codecs, System Modeling</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-gamepad"></i> Alien Invasion Simulator</h3>
+            <p class="project-date">02/2024 – 05/2024</p>
+            <p>Alien army and Earth army war simulation utilizing data structures and algorithm analysis with each army unit having its own behavior.</p>
+            <p class="tech-stack">C++, OOP, DSA</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-chart-line"></i> Probability: Analysis of Random Variables</h3>
+            <p class="project-date">11/2024 – 01/2025</p>
+            <p>Created an interactive MATLAB GUI to compute statistics, joint distributions, and function transformations for one or more random variables.</p>
+            <p class="tech-stack">MATLAB, GUI Development</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content">
+            <h3><i class="fas fa-film"></i> Movie Recommendation System</h3>
+            <p class="project-date">02/2023 – 05/2023</p>
+            <p>Built a movie recommendation system using Python libraries to suggest movies based on user's search history and previous ratings, using similarities in genres between shows with IMDb database.</p>
+            <p class="tech-stack">Python, NumPy, Pandas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="certificates-container">
+        <div class="certificate">
+          <h3><i class="fas fa-certificate"></i> CATS Training sessions</h3>
+          <p class="institution">offered by university Career Advising Office</p>
+          <p>Soft skills training focused on personal branding, adaptability, and emotional intelligence.</p>
+        </div>
+
+        <div class="certificate">
+          <h3><i class="fas fa-certificate"></i> Forward Learning Program</h3>
+          <p class="institution">Mckensey & Company</p>
+          <p>Trained in critical thinking, communication, and problem-solving in professional environments.</p>
+        </div>
+
+        <div class="certificate">
+          <h3><i class="fas fa-certificate"></i> Digital Twin Technology: Concepts and Applications</h3>
+          <p class="institution">Maharah-Tech, ITI</p>
+          <p>Digital Twin Technology certification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <div class="languages-container">
+        <div class="language">
+          <h3>Arabic</h3>
+          <div class="language-proficiency">
+            <div class="proficiency-bar">
+              <div class="proficiency-level native"></div>
+            </div>
+            <span>Native</span>
+          </div>
+        </div>
+
+        <div class="language">
+          <h3>English</h3>
+          <div class="language-proficiency">
+            <div class="proficiency-bar">
+              <div class="proficiency-level fluent"></div>
+            </div>
+            <span>Fluent</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <ul class="contact-details">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:e.mohamedalisadek@gmail.com">e.mohamedalisadek@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+201016687210">+201016687210</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Egypt, Cairo</span>
+            </li>
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <a href="https://linkedin.com/in/mohammed-sadek2710" target="_blank">linkedin.com/in/mohammed-sadek2710</a>
+            </li>
+            <li>
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/MohammedA10Sadek" target="_blank">github.com/MohammedA10Sadek</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 Mohammed Sadek. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script>
-    const toggleBtn = document.getElementById('darkModeToggle');
-    
-    // Load saved mode
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-mode');
-      toggleBtn.textContent = '☀️ Light Mode';
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      if (document.body.classList.contains('dark-mode')) {
-        toggleBtn.textContent = '☀️ Light Mode';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        toggleBtn.textContent = '🌙 Dark Mode';
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
