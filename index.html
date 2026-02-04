@@ -308,11 +308,10 @@
             50% { border-color: var(--accent-quaternary); }
         }
 
-        /* Reveal Animations */
+        /* Reveal Animations - DISABLED FOR DEBUGGING */
         .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease;
+            opacity: 1 !important;
+            transform: translateY(0) !important;
         }
 
         .reveal.active {
@@ -321,9 +320,8 @@
         }
 
         .reveal-left {
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.8s ease;
+            opacity: 1 !important;
+            transform: translateX(0) !important;
         }
 
         .reveal-left.active {
@@ -332,9 +330,8 @@
         }
 
         .reveal-right {
-            opacity: 0;
-            transform: translateX(50px);
-            transition: all 0.8s ease;
+            opacity: 1 !important;
+            transform: translateX(0) !important;
         }
 
         .reveal-right.active {
@@ -1583,7 +1580,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <i class="fas fa-image"></i>
                     </div>
@@ -1606,7 +1603,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <i class="fas fa-image"></i>
                     </div>
@@ -1629,6 +1626,7 @@
                         </a>
                     </div>
                 </div>
+
             </div>
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="https://github.com/MohammedA10Sadek?tab=repositories" target="_blank" class="more-projects-btn">
@@ -1643,14 +1641,15 @@
         <div class="container">
             <h2 class="section-title">Communication Engineering</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <i class="fas fa-image"></i>
                     </div>
                     <div class="project-content">
                         <h3>Digital Signal Processing – Spectral Estimation & Audio Filtering</h3>
                         <p class="project-metric">
-                            <i class="fas fa-signal"></i> 100.65 dB Attenuation • 15.2 kHz Interference Removal</p>
+                            <i class="fas fa-signal"></i> 100.65 dB Attenuation • 15.2 kHz Interference Removal
+                        </p>
                         <p>
                             MATLAB implementation demonstrating Welch's PSD estimation, FIR filter design using three methods (Equiripple, Least-Squares, Blackman Window), and multi-criteria decision analysis for optimal filter selection to remove sinusoidal interference from audio signals.
                         </p>
@@ -1665,14 +1664,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <i class="fas fa-image"></i>
                     </div>
                     <div class="project-content">
                         <h3>PID Controller Design for RC Circuit</h3>
                         <p class="project-metric">
-                            <i class="fas fa-signal"></i> 6.5s Settling Time • <8% Overshoot</p>
+                            <i class="fas fa-signal"></i> 6.5s Settling Time • <8% Overshoot
+                        </p>
                         <p>
                             Co-led modeling, design, and hardware implementation of a PID feedback control system for a second-order RC circuit. Validated performance through LTSpice simulations and Arduino-based digital hardware implementation.
                         </p>
@@ -1687,14 +1687,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <i class="fas fa-image"></i>
                     </div>
                     <div class="project-content">
                         <h3>16-QAM Transceiver in 4G LTE</h3>
                         <p class="project-metric">
-                            <i class="fas fa-signal"></i> Full Tx/Rx Chain • AWGN/Rician/Rayleigh Channels</p>
+                            <i class="fas fa-signal"></i> Full Tx/Rx Chain • AWGN/Rician/Rayleigh Channels
+                        </p>
                         <p>
                             Implemented complete 16-QAM transceiver chain for 4G LTE context. Analyzed BER performance under various channel conditions using MATLAB and LabVIEW, with hardware validation using NI USRP devices.
                         </p>
@@ -1709,6 +1710,30 @@
                         </a>
                     </div>
                 </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>5-Stage Pipelined ARM Processor Design</h3>
+                        <p class="project-metric">
+                            <i class="fas fa-signal"></i> 32-bit Architecture • Hazard Management • Verilog HDL
+                        </p>
+                        <p>
+                            Designed and implemented a 32-bit pipelined ARM processor with 5-stage pipeline (Fetch, Decode, Execute, Memory, Writeback). Features hazard detection, forwarding unit for RAW hazards, and support for ARM conditional execution.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Verilog</span>
+                            <span class="tech-tag">ARM ISA</span>
+                            <span class="tech-tag">ModelSim</span>
+                            <span class="tech-tag">Pipeline Design</span>
+                        </div>
+                        <a href="https://github.com/aboalis/32-ARM-Pipeline-Architecture" class="project-link" target="_blank">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="https://github.com/MohammedA10Sadek?tab=repositories" target="_blank" class="more-projects-btn">
@@ -1733,10 +1758,10 @@
                     <a href="https://linkedin.com/in/mohammed-sadek2710" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:e.mohamedalisadek@gmail.com" aria-label="Email">
+                    <a href="/cdn-cgi/l/email-protection#1960766c6b377c74787075597c61787469757c377a7674" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="tel:+201016687210" aria-label="Phone">
+                    <a href="tel:+201016687210" target="_blank" aria-label="Phone">
                         <i class="fas fa-phone"></i>
                     </a>
                 </div>
